@@ -32,7 +32,7 @@ git config --global --get user.email
 echo -e "\n=== Generating SSH key ==="
 # Use previou
 sly entered email as key comment
-ssh-keygen -t ed25519 -C "$email" -N "" -f ~/.ssh/id_ed25519 <<< y
+ssh-keygen -t ed25519 -C "$git_email" -N "" -f ~/.ssh/id_ed25519 <<< y
 
 # Display generated public key
 echo -e "\nYour generated SSH public key is shown below. Please copy it to GitHub/GitLab etc.:"
